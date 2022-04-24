@@ -110,6 +110,7 @@ void setup() {
   pinMode(vcc, OUTPUT);
 }
 void loop() {
+  Serial.println("LOOOOOPP YAYA");
   if (sensorReadMss < (millis() - ((1 + countSensorRead) * 500))) {
     sensorReadArray[countSensorRead]=sensorRead();
     countSensorRead++;
